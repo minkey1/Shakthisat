@@ -14,19 +14,14 @@ function App() {
   const [isAnimationComplete, setIsAnimationComplete] = useState(false);
 
   useEffect(() => {
-    // Check if user has seen the welcome animation in this session
-    const hasSeenWelcome = sessionStorage.getItem('hasSeenWelcome');
-    if (hasSeenWelcome) {
-      setShowWelcome(false);
-      setIsAnimationComplete(true);
-    }
+    // Always show welcome animation on page load/refresh
+    setShowWelcome(true);
+    setIsAnimationComplete(false);
   }, []);
 
   const handleAnimationComplete = () => {
     setShowWelcome(false);
     setIsAnimationComplete(true);
-    // Remember that user has seen the welcome animation for this session
-    sessionStorage.setItem('hasSeenWelcome', 'true');
   };
 
   if (showWelcome) {
