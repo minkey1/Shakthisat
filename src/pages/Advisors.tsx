@@ -1,13 +1,19 @@
-
+import advisors from "../data/dvisors.json";
 
 const Advisors = () => {
   return (
-    <div className="flex justify-center items-center h-56">
-      <img
-        src="path_to_advisor_image"
-        alt="Advisor"
-        className="max-h-full max-w-full object-contain"
-      />
+    <div className="flex flex-col items-center py-20 gap-10 text-white">
+      {advisors.map((advisor, index) => (
+        <div key={index} className="flex flex-col items-center">
+          <img
+            src={`/advisors/${advisor.image}`}
+            alt={advisor.name}
+            className="w-40 h-40 object-cover rounded-full"
+          />
+          <h2 className="text-xl mt-4">{advisor.name}</h2>
+          <p className="text-sm opacity-80">{advisor.role}</p>
+        </div>
+      ))}
     </div>
   );
 };
