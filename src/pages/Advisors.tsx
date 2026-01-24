@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Filter, X } from "lucide-react";
+import { X } from "lucide-react";
 import advisorsData from "@/data/Advisors.json";
 
 type Advisor = {
