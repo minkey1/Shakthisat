@@ -16,8 +16,8 @@ const advisorImages = import.meta.glob("../img/Advisors/*", {
 
 const resolveAdvisorImage = (image: string): string => {
   const cleaned = image
-    .replace(/^\/?img\/?Advisors\//i, "")
-    .replace(/^\/?advisors\//i, "")
+    .replace(/^\/img\/Advisors\//i, "")
+    .replace(/^\/advisors\//i, "")
     .replace(/^\//, "");
 
   const key = `../img/Advisors/${cleaned}`;
@@ -31,39 +31,20 @@ const truncateText = (text: string, limit: number): string => {
 
 const Advisors = () => {
   const [search, setSearch] = useState("");
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const [advisors, setAdvisors] = useState<Advisor[]>([]);
   const [modalIndex, setModalIndex] = useState<number | null>(null);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-    return () => {
-      document.body.style.removeProperty("overflow");
-    };
+    setAdvisors(advisorsData as Advisor[]);
   }, []);
-
-  const advisors = useMemo(
-    () =>
-      (advisorsData as Advisor[]).map((advisor) => ({
-        ...advisor,
-        image: resolveAdvisorImage(advisor.image),
-      })),
-    [],
-  );
 
   const filteredAdvisors = useMemo(
     () =>
       advisors.filter((advisor) =>
-        advisor.name.toLowerCase().includes(search.toLowerCase()),
+        advisor.name.toLowerCase().includes(search.toLowerCase())
       ),
-    [search, advisors],
+    [search, advisors]
   );
-
-  useEffect(() => {
-    if (modalIndex !== null && modalIndex >= filteredAdvisors.length) {
-      setModalIndex(null);
-      document.body.style.removeProperty("overflow");
-    }
-  }, [filteredAdvisors.length, modalIndex]);
 
   const openModal = (index: number) => {
     setModalIndex(index);
@@ -80,20 +61,28 @@ const Advisors = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-16">
         <div className="border-2 border-white/30 rounded-xl p-6 sm:p-8 shadow-xl shadow-[#6A4FC8]/10">
           <div className="text-center mb-10">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-[#FFD700] via-[#FF6EC7] to-[#6A4FC8] bg-clip-text text-transparent">
-              Our Advisors
-            </h1>
-            <p className="text-[#C0C0C0] max-w-2xl mx-auto">
-              Explore the leaders guiding ShakthiSAT with experience across space,
-              innovation, policy, and education.
-            </p>
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs uppercase tracking-[0.24em] text-purple-200">
+              Advisors
+            </span>
+
+            <div className="space-y-4 mt-4">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-300 via-teal-200 to-purple-100 bg-clip-text text-transparent drop-shadow-lg">
+                Our Advisors
+              </h1>
+
+              <p className="text-lg text-white/70 max-w-3xl mx-auto">
+                Explore the leaders guiding ShakthiSAT with experience across space, innovation, policy, and education.
+              </p>
+            </div>
+
+            <div className="w-24 h-1 mx-auto bg-gradient-to-r from-purple-500 via-fuchsia-400 to-teal-400 rounded-full mt-6" />
           </div>
 
           <div className="mb-10 max-w-md mx-auto">
             <input
               type="text"
               placeholder="Search advisors by name..."
-              className="w-full px-4 py-3 rounded-lg bg-[#12152e] text-white border border-[#383c6b] focus:outline-none focus:border-[#6A4FC8]"
+              className="w-full px-4 py-3 rounded-lg bg-[#0f1724] text-white border border-white/10 focus:outline-none focus:border-purple-400"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
@@ -101,19 +90,16 @@ const Advisors = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {filteredAdvisors.map((advisor, index) => {
-              const isExpanded = expandedIndex === index;
-              const preview = isExpanded
-                ? advisor.desc
-                : truncateText(advisor.desc, 240);
+              const preview = truncateText(advisor.desc, 240);
 
               return (
                 <div
                   key={advisor.name}
-                  className="flex flex-col md:flex-row gap-6 bg-[#12152e] rounded-xl p-6 shadow-lg hover:shadow-[#6A4FC8]/40 transition duration-200"
+                  className="flex flex-col md:flex-row gap-6 bg-[#071028] rounded-xl p-6 shadow-lg hover:shadow-[#6A4FC8]/40 transition duration-200"
                 >
                   <div className="w-full md:w-1/3 h-72 md:h-48 rounded-lg overflow-hidden border border-white/10">
                     <img
-                      src={advisor.image}
+                      src={resolveAdvisorImage(advisor.image)}
                       alt={advisor.name}
                       className="h-full w-full object-cover"
                       loading="lazy"
@@ -121,31 +107,29 @@ const Advisors = () => {
                   </div>
 
                   <div className="flex flex-col justify-center w-full md:w-2/3 text-center md:text-left">
-                    <h3 className="text-2xl font-bold text-[#FFD700] mb-3">
-                      {advisor.name}
-                    </h3>
+                    <h3 className="text-2xl font-bold text-[#FFD700] mb-3">{advisor.name}</h3>
 
                     <p className="text-sm text-[#C0C0C0] leading-relaxed">{preview}</p>
 
                     {advisor.desc.length > 240 && (
                       <button
                         type="button"
-                        className="mt-2 text-[#FF6EC7] text-xs font-semibold underline hover:text-[#FFD700] transition"
-                        onClick={() =>
-                          setExpandedIndex(isExpanded ? null : index)
-                        }
+                        className="mt-3 text-[#FF6EC7] text-xs font-semibold underline hover:text-[#FFD700] transition"
+                        onClick={() => openModal(index)}
                       >
-                        {isExpanded ? "Read Less" : "Read More"}
+                        Read More
                       </button>
                     )}
 
-                    <button
-                      type="button"
-                      onClick={() => openModal(index)}
-                      className="mt-4 inline-block px-4 py-2 rounded-md bg-[#6A4FC8] text-white font-semibold hover:bg-[#8d6bff] transition"
-                    >
-                      About
-                    </button>
+                    <div className="mt-4">
+                      <button
+                        type="button"
+                        onClick={() => openModal(index)}
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-gradient-to-r from-purple-600 to-teal-400 text-white font-semibold"
+                      >
+                        View Details
+                      </button>
+                    </div>
                   </div>
                 </div>
               );
@@ -156,7 +140,7 @@ const Advisors = () => {
 
       {modalIndex !== null && filteredAdvisors[modalIndex] && (
         <div
-          className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 px-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-6"
           onClick={closeModal}
         >
           <div
