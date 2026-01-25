@@ -25,10 +25,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-500 to-teal-500 flex items-center justify-center">
-              <span className="text-white font-bold text-sm">S</span>
-            </div>
-            <span className="text-white font-bold text-lg">ShakthiSAT</span>
+            <img src="src/img/shakthisat1.png" className='w-1/2' alt="" />
           </Link>
 
           {/* Desktop Navigation */}
