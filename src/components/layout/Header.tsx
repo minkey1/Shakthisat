@@ -25,7 +25,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src="src/img/shakthisat1.png" className='w-1/2' alt="" />
+            <img src="https://raw.githubusercontent.com/financial1mastery1hub-sudo/Shakthisat/main/src/img/shakthisat1.png" className="w-1/2" alt="ShakthiSat" />
           </Link>
 
           {/* Desktop Navigation */}
