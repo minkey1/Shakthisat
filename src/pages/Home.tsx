@@ -27,8 +27,7 @@ const Home = () => {
     <div className='min-h-screen bg-black overflow-x-hidden'>
       <ScrollExpandMedia
         mediaType='video'
-        mediaSrc='https://www.youtube.com/watch?v=vU6PDFdgf8k&t=6s'
-        bgImageSrc='https://images.unsplash.com/photo-1446776877081-d282a0f896e2?q=80&w=1920&auto=format&fit=crop'
+        mediaSrc="https://raw.githubusercontent.com/financial1mastery1hub-sudo/Shakthisat/main/src/img/video.mp4"
         title='ShakthiSAT Mission'
         date='Global Space Initiative'
         scrollToExpand='Scroll to Expand & Explore'
