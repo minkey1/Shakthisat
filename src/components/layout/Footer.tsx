@@ -20,10 +20,9 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-teal-500 flex items-center justify-center">
-                <span className="text-white font-bold">S</span>
+              <div className='flex flex-grow justify-center sm:justify-start'>
+                <img src="src/img/shakthisat.png" className='max-w-64' alt="" />
               </div>
-              <span className="text-white font-bold text-xl">ShakthiSAT Mission</span>
             </div>
             <p className="text-white/70 text-sm leading-relaxed mb-6">
               Empowering 12,000 girls from 108 countries through real-time satellite projects. 
