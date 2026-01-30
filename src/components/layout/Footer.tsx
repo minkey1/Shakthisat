@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Globe, Mail, MapPin } from 'lucide-react';
+import { Globe, Mail, MapPin, Phone } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -17,18 +17,24 @@ const Footer = () => {
     <footer className="bg-black/90 border-t border-purple-500/20 mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className='flex flex-grow justify-center sm:justify-start'>
-                <img src="https://raw.githubusercontent.com/financial1mastery1hub-sudo/Shakthisat/main/src/img/shakthisat.png" className="w-1/2" alt="ShakthiSat" />
-
+                <img 
+                  src="https://raw.githubusercontent.com/financial1mastery1hub-sudo/Shakthisat/main/src/img/shakthisat.png" 
+                  className="w-1/2"
+                  alt="ShakthiSat"
+                />
               </div>
             </div>
+
             <p className="text-white/70 text-sm leading-relaxed mb-6">
-              Empowering 12,000 girls from 108 countries through real-time satellite projects. 
+              Empowering 12,000 girls from 108 countries through real-time satellite projects.
               Building bridges across cultures through STEM and space collaboration.
             </p>
+
             <div className="flex items-center space-x-4 text-white/60">
               <div className="flex items-center space-x-2">
                 <Globe size={16} />
@@ -58,21 +64,43 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact Section Updated */}
           <div>
             <h3 className="text-white font-semibold mb-4">Contact</h3>
+
             <div className="space-y-3">
+              
+              {/* Address */}
+              <div className="flex items-start space-x-2 text-white/70">
+                <MapPin size={16} className="mt-0.5" />
+                <span className="text-sm leading-relaxed">
+                  Shambala Facility, Ispahani Centre,<br />
+                  123–124, Nungambakkam High Rd,<br />
+                  Thousand Lights West,<br />
+                  Chennai, Tamil Nadu 600034
+                </span>
+              </div>
+
+              {/* Email */}
               <div className="flex items-center space-x-2 text-white/70">
                 <Mail size={16} />
                 <span className="text-sm">care@shakthisat.com</span>
               </div>
-              <div className="text-white/70 text-sm">
+
+              {/* Phone */}
+              <div className="flex items-center space-x-2 text-white/70">
+                <Phone size={16} />
+                <span className="text-sm">+91 8122412261</span>
+              </div>
+
+              <div className="text-white/70 text-sm pt-2">
                 <p>Join the mission to inspire</p>
                 <p>the next generation of</p>
                 <p>space leaders</p>
               </div>
             </div>
           </div>
+
         </div>
 
         {/* Bottom Bar */}
@@ -80,6 +108,7 @@ const Footer = () => {
           <p className="text-white/60 text-sm">
             © {currentYear} ShakthiSAT Mission. All rights reserved.
           </p>
+
           <div className="flex items-center space-x-6 mt-4 md:mt-0">
             <span className="text-white/60 text-sm">Empowering Girls in Space</span>
             <div className="w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-teal-500"></div>
