@@ -64,7 +64,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2 text-white/70">
                 <Mail size={16} />
-                <span className="text-sm">info@shakthisat.org</span>
+                <span className="text-sm">care@shakthisat.com</span>
               </div>
               <div className="text-white/70 text-sm">
                 <p>Join the mission to inspire</p>
