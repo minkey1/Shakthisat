@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Globe, Mail, MapPin, Phone } from 'lucide-react';
+import RazorpayButton from '../ui/donation-button';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -93,10 +94,9 @@ const Footer = () => {
                 <span className="text-sm">+91 8122412261</span>
               </div>
 
-              <div className="text-white/70 text-sm pt-2">
-                <p>Join the mission to inspire</p>
-                <p>the next generation of</p>
-                <p>space leaders</p>
+              {/* Donation Button */}
+              <div className='pt-5'>
+                <RazorpayButton/>
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-purple-500/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/60 text-sm">
-            © {currentYear} ShakthiSAT Mission. All rights reserved.
+            © {currentYear} ShakthiSAT Mission. All rights reserved. Join the mission to inspire the next generation of space leaders
           </p>
 
           <div className="flex items-center space-x-6 mt-4 md:mt-0">
