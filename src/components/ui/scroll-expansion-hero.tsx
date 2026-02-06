@@ -18,7 +18,6 @@ interface ScrollExpandMediaProps {
   title?: string;
   date?: string;
   scrollToExpand?: string;
-  textBlend?: boolean;
   children?: ReactNode;
   use3DBackground?: boolean;
   useAnimatedShader?: boolean;
@@ -32,7 +31,6 @@ const ScrollExpandMedia = ({
   title,
   date,
   scrollToExpand,
-  textBlend,
   children,
   use3DBackground = false,
   useAnimatedShader = false,
@@ -242,9 +240,6 @@ const ScrollExpandMedia = ({
   const scrollOffset = scrollProgress * (isMobileState ? 180 : 150);
   const textTranslateX = baseOffset + scrollOffset;
 
-  const firstWord = title ? title.split(' ')[0] : '';
-  const restOfTitle = title ? title.split(' ').slice(1).join(' ') : '';
-
   return (
     <div
       ref={sectionRef}
@@ -396,30 +391,6 @@ const ScrollExpandMedia = ({
                 </div>
               </div>
 
-              <div
-                className={`flex items-center justify-center text-center gap-4 w-full relative z-10 transition-none flex-col ${
-                  textBlend ? 'mix-blend-difference' : 'mix-blend-normal'
-                }`}
-              >
-                <motion.h2
-                  className='text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-gradient-to-r from-purple-400 to-teal-300 bg-clip-text transition-none'
-                  style={{
-                    transform: `translate3d(${textTranslateX + 3}vw, 0, 0)`,
-                    willChange: 'transform',
-                  }}
-                >
-                  {firstWord}
-                </motion.h2>
-                <motion.h2
-                  className='text-4xl md:text-5xl lg:text-6xl font-bold text-center text-transparent bg-gradient-to-r from-teal-300 to-purple-400 bg-clip-text transition-none'
-                  style={{
-                    transform: `translate3d(-${textTranslateX}vw, 0, 0)`,
-                    willChange: 'transform',
-                  }}
-                >
-                  {restOfTitle}
-                </motion.h2>
-              </div>
             </div>
 
             <motion.section
