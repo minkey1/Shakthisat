@@ -50,7 +50,8 @@ const Why108Countries = () => {
                 <span className='text-4xl font-bold text-white z-10'>108</span>
               </div>
               <p className='text-base md:text-lg text-white/90'>
-                The number 108 carries deep cultural, scientific, and spiritual significance across civilizations.
+                In the precision world of space engineering, the ~108 ratio is a cosmic alignment masterstroke — both the Moon and the Sun sit roughly 108 times their own diameters away from Earth, giving them an almost identical apparent size in our sky.
+
               </p>
             </motion.div>
 
@@ -63,7 +64,9 @@ const Why108Countries = () => {
               className='bg-gradient-to-r from-purple-500/20 to-teal-500/20 rounded-2xl p-6 border border-purple-400/20'
             >
               <p className='text-base md:text-lg font-semibold text-transparent bg-gradient-to-r from-purple-300 to-teal-300 bg-clip-text'>
-                By uniting 108 countries, we celebrate diversity as a force multiplier for breakthrough innovation.
+                n space science, ~108 appears as an approximate angular-geometry coincidence: the Moon and the Sun are each ~108–110 times their own diameters away from Earth, which makes their apparent angular sizes nearly equal (~0.5°).
+
+This geometric near-match enables total solar eclipses and informs angular-resolution calculations, sensor field-of-view design, and alignment modeling in observational space systems.
               </p>
             </motion.div>
 
