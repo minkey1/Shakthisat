@@ -8,7 +8,7 @@ const COUNTRIES = [
   'India', 'Angola', 'Argentina', 'Australia', 'Austria',
   'Bahamas', 'Benin', 'Bolivia', 'Botswana', 'Brazil', 'UAE', 'Brunei',
   'Burkina Faso', 'Cameroon', 'Cyprus', 'Central African Republic', 'Chile',
-  'Colombia', 'Costa Rica', 'Dominica', 'Egypt', 'Equatorial Guinea',
+  'Colombia', 'Costa Rica', 'Egypt', 'Equatorial Guinea',
   'El Salvador', 'Saudi Arabia', 'Eswatini', 'Ethiopia', 'France',
   'Republic of Gabon', 'Gambia', 'Ghana', 'Greece', 'Grenada', 'Guatemala',
   'Haiti', 'Honduras', 'Hungary', 'Qatar', 'Afghanistan', 'Indonesia',
