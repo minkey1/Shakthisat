@@ -64,7 +64,7 @@ const Why108Countries = () => {
               className='bg-gradient-to-r from-purple-500/20 to-teal-500/20 rounded-2xl p-6 border border-purple-400/20'
             >
               <p className='text-base md:text-lg font-semibold text-transparent bg-gradient-to-r from-purple-300 to-teal-300 bg-clip-text'>
-                n space science, ~108 appears as an approximate angular-geometry coincidence: the Moon and the Sun are each ~108–110 times their own diameters away from Earth, which makes their apparent angular sizes nearly equal (~0.5°).
+                In space science, ~108 appears as an approximate angular-geometry coincidence: the Moon and the Sun are each ~108–110 times their own diameters away from Earth, which makes their apparent angular sizes nearly equal (~0.5°).
 
 This geometric near-match enables total solar eclipses and informs angular-resolution calculations, sensor field-of-view design, and alignment modeling in observational space systems.
               </p>
