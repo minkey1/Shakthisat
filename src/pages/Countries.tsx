@@ -5,9 +5,9 @@ import { Search, Globe as GlobeIcon } from 'lucide-react';
 const InteractiveGlobe = lazy(() => import('@/components/ui/interactive-globe'));
 
 const COUNTRIES = [
-  'India', 'Albania', 'Angola', 'Argentina', 'Armenia', 'Australia', 'Austria',
+  'India', 'Angola', 'Argentina', 'Australia', 'Austria',
   'Bahamas', 'Benin', 'Bolivia', 'Botswana', 'Brazil', 'UAE', 'Brunei',
-  'Burkina Faso', 'Cameroon', 'Canada', 'Central African Republic', 'Chile',
+  'Burkina Faso', 'Cameroon', 'Cyprus', 'Central African Republic', 'Chile',
   'Colombia', 'Costa Rica', 'Dominica', 'Egypt', 'Equatorial Guinea',
   'El Salvador', 'Saudi Arabia', 'Eswatini', 'Ethiopia', 'France',
   'Republic of Gabon', 'Gambia', 'Ghana', 'Greece', 'Grenada', 'Guatemala',
