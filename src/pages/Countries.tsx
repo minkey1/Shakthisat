@@ -6,7 +6,7 @@ const InteractiveGlobe = lazy(() => import('@/components/ui/interactive-globe'))
 
 const COUNTRIES = [
   'India', 'Angola', 'Argentina', 'Australia', 'Austria',
-  'Bahamas', 'Benin', 'Bolivia', 'Botswana', 'Brazil', 'UAE', 'Brunei',
+  'Bahamas', 'Benin', 'Bolivia', 'Botswana', 'Brazil', 'UAE', 'Brunei', 'Bhutan'
   'Burkina Faso', 'Cameroon', 'Cyprus', 'Central African Republic', 'Chile',
   'Colombia', 'Costa Rica', 'Egypt', 'Equatorial Guinea',
   'El Salvador', 'Saudi Arabia', 'Eswatini', 'Ethiopia', 'France',
@@ -16,11 +16,11 @@ const COUNTRIES = [
   'Kyrgyzstan', 'Latvia', 'Lesotho', 'Liberia', 'Oman', 'Luxembourg',
   'Macedonia', 'Madagascar', 'Malawi', 'Malaysia', 'Malta', 'Mexico',
   'Moldova', 'Monaco', 'Mongolia', 'Montenegro', 'Morocco', 'Kuwait',
-  'Mozambique', 'Namibia', 'Nepal', 'Netherlands', 'New Zealand', 'Nigeria',
+  'Mozambique', 'Namibia', 'Nepal', 'Netherlands', 'Switzerland', 'Nigeria',
   'Guyana', 'Palau', 'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines',
   'Bahrain', 'Portugal', 'Romania', 'Rwanda', 'Samoa', 'Senegal', 'Serbia',
   'Seychelles', 'Sierra Leone', 'Singapore', 'Slovenia', 'South Africa',
-  'Vietnam', 'Panama', 'Spain', 'Sri Lanka', 'St Lucia',
+   'Panama', 'Spain', 'Sri Lanka', 'St Lucia',
   'St Vincent and the Grenadines', 'St Kitts and Nevis', 'Tanzania',
   'Thailand', 'The Solomon Islands', 'Togo', 'Trinidad and Tobago', 'Tunisia',
   'Turkmenistan', 'Myanmar', 'Poland', 'Uganda', 'United Kingdom', 'Uruguay',
