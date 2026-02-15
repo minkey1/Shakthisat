@@ -6,7 +6,7 @@ const InteractiveGlobe = lazy(() => import('@/components/ui/interactive-globe'))
 
 const COUNTRIES = [
   'India', 'Angola', 'Argentina', 'Australia', 'Austria',
-  'Bahamas', 'Benin', 'Bolivia', 'Botswana', 'Brazil', 'UAE', 'Brunei', 'Bhutan'
+  'Bahamas', 'Benin', 'Bolivia', 'Botswana', 'Brazil', 'UAE', 'Brunei', 'Bhutan', 
   'Burkina Faso', 'Cameroon', 'Cyprus', 'Central African Republic', 'Chile',
   'Colombia', 'Costa Rica', 'Egypt', 'Equatorial Guinea',
   'El Salvador', 'Saudi Arabia', 'Eswatini', 'Ethiopia', 'France',
