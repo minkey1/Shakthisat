@@ -11,7 +11,8 @@ const Footer = () => {
     { name: 'About Us', path: '/about' },
     { name: 'Advisors', path: '/advisors' },
     { name: 'Countries', path: '/countries' },
-    { name: 'Devis', path: '/devices' },
+    { name: 'Devis', path: '/devis' },
+    { name: 'Patrons', path: '/patrons-of-honor' },
   ];
 
   return (

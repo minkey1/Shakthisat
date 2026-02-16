@@ -7,7 +7,8 @@ import Partners from './pages/Partners';
 import About from './pages/About';
 import Advisors from './pages/Advisors';
 import Countries from './pages/Countries';
-import Devices from './pages/Devices';
+import Devis from './pages/Devis';
+import PatronsOfHonor from './pages/PatronsOfHonor';
 
 function App() {
   const [showWelcome, setShowWelcome] = useState(true);
@@ -31,10 +32,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/partners" element={<Partners />} />
+          <Route path="/patrons-of-honor" element={<PatronsOfHonor />} />
           <Route path="/about" element={<About />} />
           <Route path="/advisors" element={<Advisors />} />
           <Route path="/countries" element={<Countries />} />
-          <Route path="/devices" element={<Devices />} />
+          <Route path="/devis" element={<Devis />} />
         </Routes>
       </Layout>
     </Router>
