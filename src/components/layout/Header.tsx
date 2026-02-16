@@ -9,10 +9,11 @@ const Header = () => {
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'Partners', path: '/partners' },
+    { name: 'Patrons of Honor', path: '/patrons-of-honor' },
     { name: 'About Us', path: '/about' },
     { name: 'Advisors', path: '/advisors' },
     { name: 'Countries', path: '/countries' },
-    { name: 'Devis', path: '/devices' },
+    { name: 'Devis', path: '/devis' },
   ];
 
   const isActive = (path: string) => {

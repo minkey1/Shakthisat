@@ -60,7 +60,7 @@ const formatRoleText = (role: RoleFilter) => {
   return role;
 };
 
-const Devices = () => {
+const Devis = () => {
   const [search, setSearch] = useState("");
   const [roleFilter, setRoleFilter] = useState<RoleFilter>("All");
   const [selected, setSelected] = useState<EnrichedAmbassador | null>(null);
@@ -153,6 +153,7 @@ const Devices = () => {
 
               <div className="relative">
                 <select
+                  name="role"
                   value={roleFilter}
                   onChange={(e) => setRoleFilter(e.target.value as RoleFilter)}
                   className="appearance-none w-full sm:w-56 px-5 py-2 rounded-full bg-black/40 border border-white/20 text-white font-semibold shadow-md hover:border-teal-300/50 transition cursor-pointer focus:outline-none focus:border-teal-300/50 focus:ring-1 focus:ring-teal-400/20"
@@ -296,4 +297,4 @@ const Devices = () => {
   );
 };
 
-export default Devices;
+export default Devis;
