@@ -14,7 +14,7 @@ const patronImages = import.meta.glob('../img/Patrons/*', {
   import: 'default',
 });
 
-const FEATURED_PATRON_KEY = '../img/Patrons/3.png';
+const FEATURED_PATRON_KEY = '../img/Patrons/Smt Meenkashi Lekhi.png';
 const featuredPatronSrc = (patronImages[FEATURED_PATRON_KEY] as string | undefined) ?? null;
 
 type GalleryItem = {
@@ -29,8 +29,8 @@ const buildGalleryItems = (): GalleryItem[] =>
     .sort(([a], [b]) => {
       const filenameA = a.split('/').pop() ?? '';
       const filenameB = b.split('/').pop() ?? '';
-      const numA = parseInt(filenameA.match(/^\d+/)?.[0] ?? '99999', 10);
-      const numB = parseInt(filenameB.match(/^\d+/)?.[0] ?? '99999', 10);
+      const numA = parseInt(filenameA.match(/^�\d+/)?.[0] ?? '99999', 10);
+      const numB = parseInt(filenameB.match(/^�\d+/)?.[0] ?? '99999', 10);
       if (numA !== numB) return numA - numB;
       return filenameA.localeCompare(filenameB);
     })
