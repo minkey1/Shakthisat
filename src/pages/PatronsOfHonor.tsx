@@ -143,7 +143,7 @@ const PatronsOfHonor = () => {
             className="flex flex-col items-center gap-8"
           >
             <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-600/30 to-teal-500/30 border border-white/10 text-xs uppercase tracking-[0.24em] text-teal-200">
-              ✦ Special Patron ✦
+              ✦ GLOBAL PATRON D'HONNEUR ✦
             </span>
             <div className="relative group w-64 sm:w-72 md:w-80">
               <div className="absolute -inset-1 rounded-3xl bg-gradient-to-br from-purple-500 via-fuchsia-400 to-teal-400 opacity-60 blur-lg group-hover:opacity-90 transition-opacity duration-500" />
@@ -164,7 +164,7 @@ const PatronsOfHonor = () => {
               <h2 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-purple-300 via-fuchsia-200 to-teal-200 bg-clip-text text-transparent">
                 Smt. Meenakshi Lekhi
               </h2>
-              <p className="text-white/60 text-sm uppercase tracking-widest">Patron of Honor</p>
+              <p className="text-white/60 text-sm uppercase tracking-widest">GLOBAL PATRON D'HONNEUR</p>
             </div>
             <div className="w-32 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
           </motion.div>
