@@ -42,7 +42,44 @@ const AboutUs = () => {
           transition={{ duration: 0.75 }}
           className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_30px_100px_-45px_rgba(0,0,0,0.8)] p-8 sm:p-12 space-y-12"
         >
+
           {/* SECTION 1 — Space Kidz India Intro */}
+          <section className="space-y-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-teal-100">
+              Our Founder
+            </h2>
+            
+            <div className="flex flex-col sm:flex-row-reverse justify-center items-center sm:justify-start sm:items-start">
+              
+                <img src="src/img/about-founder.jpg" className="h-64 w-fit rounded-2xl border border-white/10 shadow-lg object-cover mx-4" alt="Founder of Space Kidz India" />
+                
+              <div>
+              <p className="text-white/80 leading-relaxed text-lg">
+                "Space Kidz India" is an aerospace startup designing and building
+                satellites and rockets. It is the only organisation to have
+                launched <span className="text-teal-300 font-semibold">19+ Balloon Satellites</span>,{" "}
+                <span className="text-teal-300 font-semibold">3 Suborbital Satellites</span>, and{" "}
+                <span className="text-teal-300 font-semibold">5 Orbital Satellites</span>.
+              </p>
+              
+              <p className="text-white/80 leading-relaxed text-lg">
+                Beginning its journey in 2012 as an ambassador to the NASA Space
+                Camps, Space Kidz India has inspired more than{" "}
+                <span className="text-purple-300 font-semibold">3500 students</span> across India with
+                hands-on experience at world-renowned institutions like the
+                Kennedy Space Center, Johnson Space Center – NASA, European Space
+                Agency, Russian Space Center – Star City, Gagarin Cosmonaut
+                Training Centre, and Moscow Aviation Institute.
+              </p>
+              </div>
+            </div>
+          </section>
+
+          <div className="h-[1px] w-full bg-white/10" />
+
+
+
+          {/* SECTION 2 — Space Kidz India Intro */}
           <section className="space-y-4">
             <h2 className="text-3xl sm:text-4xl font-bold text-teal-100">
               Space Kidz India
@@ -68,7 +105,7 @@ const AboutUs = () => {
 
           <div className="h-[1px] w-full bg-white/10" />
 
-          {/* SECTION 2 — Mission */}
+          {/* SECTION 3 — Mission */}
           <section className="space-y-4">
             <h2 className="text-3xl sm:text-4xl font-bold text-purple-200">
               Our Mission — ShakthiSAT
@@ -87,7 +124,7 @@ const AboutUs = () => {
 
           <div className="h-[1px] w-full bg-white/10" />
 
-          {/* SECTION 3 — Peace & Power */}
+          {/* SECTION 4 — Peace & Power */}
           <section className="space-y-4">
             <h2 className="text-3xl sm:text-4xl font-bold text-fuchsia-200">
               ShakthiSAT — Peace & Power
