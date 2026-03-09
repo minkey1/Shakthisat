@@ -43,33 +43,24 @@ const AboutUs = () => {
           className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_30px_100px_-45px_rgba(0,0,0,0.8)] p-8 sm:p-12 space-y-12"
         >
 
-          {/* SECTION 1 — Space Kidz India Intro */}
+          {/* SECTION 1 — Founder */}
           <section className="space-y-4">
             <h2 className="text-3xl sm:text-4xl font-bold text-teal-100">
-              Our Founder
+              Dr. Srimathy Kesan
             </h2>
             
             <div className="flex flex-col sm:flex-row-reverse justify-center items-center sm:justify-start sm:items-start">
               
-                <img src="src/img/about-founder.jpg" className="h-64 w-fit rounded-2xl border border-white/10 shadow-lg object-cover mx-4" alt="Founder of Space Kidz India" />
-                
+                <div className="rounded-[1.4rem] bg-black/20 border border-white/10 p-2 mx-4 w-64 shrink-0">
+                  <img src="src/img/about-founder.jpg" className="aspect-[4/5] rounded-2xl border border-white/10 shadow-lg object-cover" alt="Founder of Space Kidz India" />
+                </div>
               <div>
               <p className="text-white/80 leading-relaxed text-lg">
-                "Space Kidz India" is an aerospace startup designing and building
-                satellites and rockets. It is the only organisation to have
-                launched <span className="text-teal-300 font-semibold">19+ Balloon Satellites</span>,{" "}
-                <span className="text-teal-300 font-semibold">3 Suborbital Satellites</span>, and{" "}
-                <span className="text-teal-300 font-semibold">5 Orbital Satellites</span>.
+                Founder & CEO of Space Kidz India, is a pioneering aerospace entrepreneur with 7+ years of experience. She is the <span className="text-teal-300 font-semibold">only woman founder in the world to have built and launched 27 space missions</span>, including <span className="text-teal-300 font-semibold">19+ Balloon Satellites, 3 Suborbital Payloads, and 5 Orbital Satellites</span>. Her innovations include KALAMSAT (World's Smallest and Lightest Satellite), launched by NASA, and multiple satellites by ISRO including KalamsatV-2, SD SAT, AzaadiSAT, and AzaadiSAT 2.0.
               </p>
               
               <p className="text-white/80 leading-relaxed text-lg">
-                Beginning its journey in 2012 as an ambassador to the NASA Space
-                Camps, Space Kidz India has inspired more than{" "}
-                <span className="text-purple-300 font-semibold">3500 students</span> across India with
-                hands-on experience at world-renowned institutions like the
-                Kennedy Space Center, Johnson Space Center – NASA, European Space
-                Agency, Russian Space Center – Star City, Gagarin Cosmonaut
-                Training Centre, and Moscow Aviation Institute.
+                Dr. Srimathy holds the unique distinction of being the <span className="text-purple-300 font-semibold">only Indian decorated with Ambassador status at the world's top 3 space centers—NASA, ESA, and GCTC-Moscow</span>. She was the first woman from India to experience zero gravity flight, alongside legendary astronauts including Apollo Astronaut Charles Duke and Richard Garriott. A staunch believer in "Actions speak louder than words," Dr. Srimathy focuses on hands-on experimentation and practical innovation in space exploration through real satellite and rocket projects.
               </p>
               </div>
             </div>
@@ -77,9 +68,26 @@ const AboutUs = () => {
 
           <div className="h-[1px] w-full bg-white/10" />
 
+          {/* SECTION 2 — Mission */}
+          <section className="space-y-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-purple-200">
+              Our Mission — ShakthiSAT
+            </h2>
 
+            <p className="text-white/80 leading-relaxed text-lg">
+              ShakthiSAT is driven by the powerful vision of empowering young
+              girls across the globe through the awe-inspiring world of space
+              exploration. The mission aims to involve{" "}
+              <span className="text-teal-300 font-semibold">12,000 girls</span>{" "}
+              from <span className="text-teal-300 font-semibold">108 nations</span>, giving{" "}
+              <span className="text-purple-300 font-semibold">108 talented students</span> in each
+              country a life-changing opportunity to discover their passion.
+            </p>
+          </section>
 
-          {/* SECTION 2 — Space Kidz India Intro */}
+          <div className="h-[1px] w-full bg-white/10" />
+          
+          {/* SECTION 3 — Space Kidz India Intro */}
           <section className="space-y-4">
             <h2 className="text-3xl sm:text-4xl font-bold text-teal-100">
               Space Kidz India
@@ -100,25 +108,6 @@ const AboutUs = () => {
               Kennedy Space Center, Johnson Space Center – NASA, European Space
               Agency, Russian Space Center – Star City, Gagarin Cosmonaut
               Training Centre, and Moscow Aviation Institute.
-            </p>
-          </section>
-
-          <div className="h-[1px] w-full bg-white/10" />
-
-          {/* SECTION 3 — Mission */}
-          <section className="space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-bold text-purple-200">
-              Our Mission — ShakthiSAT
-            </h2>
-
-            <p className="text-white/80 leading-relaxed text-lg">
-              ShakthiSAT is driven by the powerful vision of empowering young
-              girls across the globe through the awe-inspiring world of space
-              exploration. The mission aims to involve{" "}
-              <span className="text-teal-300 font-semibold">12,000 girls</span>{" "}
-              from <span className="text-teal-300 font-semibold">108 nations</span>, giving{" "}
-              <span className="text-purple-300 font-semibold">108 talented students</span> in each
-              country a life-changing opportunity to discover their passion.
             </p>
           </section>
 
