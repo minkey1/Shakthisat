@@ -15,7 +15,7 @@ const RazorpayButton: React.FC = () => {
     script.async = true;
     script.setAttribute(
       "data-payment_button_id",
-      "pl_SBTk0NHmhpgBrH"
+      "pl_SJefeUpLJXleZo"
     );
 
     container.appendChild(script);
