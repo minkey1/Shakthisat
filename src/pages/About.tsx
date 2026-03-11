@@ -5,8 +5,8 @@ const AboutUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     
-    // SEO: Update page title for About page
-    document.title = "About Mission ShakthiSat | Dr. Srimathy Kesan | Space Kidz India | Space Research Organization";
+    // SEO: Update page title for global About page
+    document.title = "About Mission ShakthiSat | Dr. Srimathy Kesan | Space Kidz India | Global Space Research Organization | Australia India";
   }, []);
 
   return (

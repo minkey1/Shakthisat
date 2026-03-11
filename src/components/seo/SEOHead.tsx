@@ -7,14 +7,22 @@ interface SEOHeadProps {
   keywords?: string;
   image?: string;
   url?: string;
+  type?: string;
+  author?: string;
+  publishedTime?: string;
+  modifiedTime?: string;
 }
 
 const SEOHead = ({ 
-  title = "Mission ShakthiSat | Global Space Initiative Empowering 12,000 Girls from 108 Countries | Space Tech India",
-  description = "Mission ShakthiSat is India's pioneering space mission empowering 12,000 girls from 108 countries through real-time satellite projects. Leading space research, STEM education, and international space collaboration.",
-  keywords = "Mission ShakthiSat, ShakthiSat, space mission, space tech India, space research India, satellite mission, STEM education, space exploration, girls in space, space organizations, Indian space mission, Space Kidz India, Dr. Srimathy Kesan",
+  title = "Mission ShakthiSat | Global Space Initiative Empowering 12,000 Girls from 108 Countries | Space Tech India Australia",
+  description = "Mission ShakthiSat: Global space initiative empowering 12,000 girls from 108 countries including Australia, India, USA, UK. Leading space research, satellite missions, STEM education worldwide.",
+  keywords = "Mission ShakthiSat, ShakthiSat space mission, space tech India, space tech Australia, space research India, space research Australia, space organizations, satellite mission, STEM education girls, space exploration, girls in space, international space mission, Space Kidz India, Dr Srimathy Kesan, space technology, orbital satellites, space collaboration, space science education, aerospace startup India, space innovation Australia, space mission Australia, space education Australia, satellite technology, space program, space agency, space industry, aerospace engineering, space science, women in space, space leadership, NewSpace, commercial space",
   image = "https://shakthisat.com/img/shakthisat.png",
-  url
+  url,
+  type = "website",
+  author = "Space Kidz India - Dr. Srimathy Kesan",
+  publishedTime,
+  modifiedTime
 }: SEOHeadProps) => {
   const location = useLocation();
   const currentUrl = url || `https://shakthisat.com${location.pathname}`;
@@ -23,61 +31,102 @@ const SEOHead = ({
     // Update document title
     document.title = title;
 
-    // Update meta description
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', description);
-    }
+    // Update or create meta tags
+    const updateMetaTag = (name: string, content: string, property = false) => {
+      const selector = property ? `meta[property="${name}"]` : `meta[name="${name}"]`;
+      let metaTag = document.querySelector(selector);
+      
+      if (metaTag) {
+        metaTag.setAttribute('content', content);
+      } else {
+        metaTag = document.createElement('meta');
+        if (property) {
+          metaTag.setAttribute('property', name);
+        } else {
+          metaTag.setAttribute('name', name);
+        }
+        metaTag.setAttribute('content', content);
+        document.head.appendChild(metaTag);
+      }
+    };
 
-    // Update meta keywords
-    const metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (metaKeywords) {
-      metaKeywords.setAttribute('content', keywords);
-    }
+    // Basic meta tags
+    updateMetaTag('description', description);
+    updateMetaTag('keywords', keywords);
+    updateMetaTag('author', author);
 
-    // Update Open Graph tags
-    const ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle) {
-      ogTitle.setAttribute('content', title);
-    }
+    // Open Graph tags
+    updateMetaTag('og:title', title, true);
+    updateMetaTag('og:description', description, true);
+    updateMetaTag('og:image', image, true);
+    updateMetaTag('og:url', currentUrl, true);
+    updateMetaTag('og:type', type, true);
+    updateMetaTag('og:site_name', 'Mission ShakthiSat', true);
+    updateMetaTag('og:locale', 'en_US', true);
 
-    const ogDescription = document.querySelector('meta[property="og:description"]');
-    if (ogDescription) {
-      ogDescription.setAttribute('content', description);
-    }
+    // Twitter Card tags
+    updateMetaTag('twitter:card', 'summary_large_image');
+    updateMetaTag('twitter:title', title);
+    updateMetaTag('twitter:description', description);
+    updateMetaTag('twitter:image', image);
+    updateMetaTag('twitter:site', '@ShakthiSat');
+    updateMetaTag('twitter:creator', '@SpaceKidzIndia');
 
-    const ogImage = document.querySelector('meta[property="og:image"]');
-    if (ogImage) {
-      ogImage.setAttribute('content', image);
+    // Additional SEO meta tags
+    updateMetaTag('robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+    updateMetaTag('googlebot', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
+    updateMetaTag('bingbot', 'index, follow');
+    
+    // Article meta tags (if applicable)
+    if (publishedTime) {
+      updateMetaTag('article:published_time', publishedTime, true);
     }
-
-    const ogUrl = document.querySelector('meta[property="og:url"]');
-    if (ogUrl) {
-      ogUrl.setAttribute('content', currentUrl);
-    }
-
-    // Update Twitter Card tags
-    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
-    if (twitterTitle) {
-      twitterTitle.setAttribute('content', title);
-    }
-
-    const twitterDescription = document.querySelector('meta[name="twitter:description"]');
-    if (twitterDescription) {
-      twitterDescription.setAttribute('content', description);
-    }
-
-    const twitterImage = document.querySelector('meta[name="twitter:image"]');
-    if (twitterImage) {
-      twitterImage.setAttribute('content', image);
+    if (modifiedTime) {
+      updateMetaTag('article:modified_time', modifiedTime, true);
     }
 
     // Update canonical URL
-    const canonical = document.querySelector('link[rel="canonical"]');
+    let canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) {
       canonical.setAttribute('href', currentUrl);
+    } else {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      canonical.setAttribute('href', currentUrl);
+      document.head.appendChild(canonical);
     }
-  }, [title, description, keywords, image, currentUrl]);
+
+    // Add JSON-LD structured data for current page
+    const addStructuredData = (data: object) => {
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.textContent = JSON.stringify(data);
+      document.head.appendChild(script);
+    };
+
+    // Page-specific structured data
+    if (location.pathname === '/') {
+      addStructuredData({
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Mission ShakthiSat",
+        "alternateName": ["ShakthiSat", "Space Kidz India"],
+        "url": "https://shakthisat.com",
+        "description": description,
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://shakthisat.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/company/space-kidz-india",
+          "https://twitter.com/SpaceKidzIndia",
+          "https://www.facebook.com/SpaceKidzIndia"
+        ]
+      });
+    }
+
+  }, [title, description, keywords, image, currentUrl, type, author, publishedTime, modifiedTime, location.pathname]);
 
   return null;
 };

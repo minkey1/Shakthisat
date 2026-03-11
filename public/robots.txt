@@ -1,22 +1,49 @@
-# Robots.txt for Mission ShakthiSat
+# Robots.txt for Mission ShakthiSat - Global Space Initiative
 # https://shakthisat.com/robots.txt
 
 User-agent: *
 Allow: /
 
-# Priority pages for crawling
+# Priority pages for crawling - Global reach
 Allow: /partners
 Allow: /advisors
 Allow: /about
 Allow: /countries
 Allow: /patrons-of-honor
+Allow: /devis
+
+# Static assets
+Allow: /img/
+Allow: /assets/
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.gif
+Allow: /*.svg
+Allow: /*.webp
+Allow: /*.ico
 
 # Sitemap location
 Sitemap: https://shakthisat.com/sitemap.xml
 
-# Crawl delay (optional - helps with server load)
+# Crawl delay for better server performance
 Crawl-delay: 1
 
-# Block specific bots if needed (currently allowing all)
-# User-agent: BadBot
-# Disallow: /
+# Specific bot optimizations
+User-agent: Googlebot
+Crawl-delay: 0
+
+User-agent: Bingbot
+Crawl-delay: 1
+
+User-agent: Slurp
+Crawl-delay: 1
+
+# Block specific paths if needed (currently allowing all)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Cache directive
+# Cache-Control: public, max-age=3600

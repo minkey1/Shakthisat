@@ -1,15 +1,16 @@
 {
-  "name": "Mission ShakthiSat - Global Space Initiative",
+  "name": "Mission ShakthiSat - Global Space Initiative Empowering Girls Worldwide",
   "short_name": "ShakthiSat",
-  "description": "Empowering 12,000 girls from 108 countries through space exploration and STEM education",
+  "description": "Global space initiative empowering 12,000 girls from 108 countries including Australia, India, USA, UK through space exploration, satellite missions and STEM education",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#9333ea",
   "orientation": "portrait-primary",
-  "categories": ["education", "science", "technology"],
+  "categories": ["education", "science", "technology", "space", "STEM", "aerospace"],
   "lang": "en",
   "dir": "ltr",
+  "scope": "/",
   "icons": [
     {
       "src": "/shakthisat.png",
@@ -29,7 +30,32 @@
       "src": "/img/shakthisat.png",
       "sizes": "1280x720",
       "type": "image/png",
-      "label": "Mission ShakthiSat Homepage"
+      "label": "Mission ShakthiSat Homepage - Global Space Initiative"
     }
-  ]
+  ],
+  "shortcuts": [
+    {
+      "name": "About Mission",
+      "short_name": "About",
+      "description": "Learn about Mission ShakthiSat and Dr. Srimathy Kesan",
+      "url": "/about",
+      "icons": [{ "src": "/shakthisat.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Countries",
+      "short_name": "Countries",
+      "description": "Explore 108 participating countries",
+      "url": "/countries",
+      "icons": [{ "src": "/shakthisat.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Partners",
+      "short_name": "Partners",
+      "description": "View our global partners and collaborators",
+      "url": "/partners",
+      "icons": [{ "src": "/shakthisat.png", "sizes": "96x96" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
 }

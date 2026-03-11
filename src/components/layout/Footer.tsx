@@ -34,8 +34,8 @@ const Footer = () => {
             </div>
 
             <p className="text-white/70 text-sm leading-relaxed mb-6" itemProp="description">
-              Empowering 12,000 girls from 108 countries through real-time satellite projects.
-              Building bridges across cultures through STEM and space collaboration.
+              Empowering 12,000 girls from 108 countries including Australia, India, USA, UK through real-time satellite projects.
+              Building bridges across cultures through STEM and space collaboration worldwide.
             </p>
 
             <div className="flex items-center space-x-4 text-white/60">

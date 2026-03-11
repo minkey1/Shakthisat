@@ -26,8 +26,8 @@ const Home = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     
-    // SEO: Update page title dynamically if needed
-    document.title = "Mission ShakthiSat | Global Space Initiative Empowering 12,000 Girls from 108 Countries | Space Tech India";
+    // SEO: Update page title for global reach
+    document.title = "Mission ShakthiSat | Global Space Initiative | Space Tech India Australia | 12,000 Girls 108 Countries";
     
     const resetEvent = new Event('resetSection');
     window.dispatchEvent(resetEvent);
@@ -37,9 +37,9 @@ const Home = () => {
     <main className='min-h-screen bg-black overflow-x-hidden' role="main">
       {/* SEO: Hidden structured data for better indexing */}
       <div style={{ display: 'none' }}>
-        <h1>Mission ShakthiSat - India's Premier Space Mission</h1>
-        <p>Empowering 12,000 girls from 108 countries through space technology, satellite missions, and STEM education. Leading space research and innovation in India.</p>
-        <span>Keywords: space mission, ShakthiSat, space tech India, satellite technology, STEM education, space research, girls in space, aerospace startup</span>
+        <h1>Mission ShakthiSat - Global Premier Space Mission</h1>
+        <p>Empowering 12,000 girls from 108 countries including Australia, India, USA, UK through space technology, satellite missions, and STEM education. Leading space research and innovation globally.</p>
+        <span>Keywords: Mission ShakthiSat, space mission, ShakthiSat, space tech India, space tech Australia, satellite technology, STEM education, space research, girls in space, aerospace startup, space organizations, international space mission, space collaboration, space innovation, space education Australia, space education India, space program, space agency, space industry, women in space, space leadership, space entrepreneurship, NewSpace, commercial space, space technology development, space research organization, satellite development, aerospace engineering, space science research, space exploration program, global space initiative, space STEM education, space sector, aerospace industry, space companies, space ventures, space projects, space engineering, space manufacturing, space economy, space business, space enterprise, space investment, space innovation hub, space ecosystem, space community, space future, space vision, space mission management, space operations, space systems, space platforms, space vehicles, space exploration mission, space discovery, space science mission, space technology mission</span>
       </div>
       
       <ScrollExpandMedia

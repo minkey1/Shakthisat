@@ -60,7 +60,7 @@ const Countries = () => {
           </div>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-teal-500 mx-auto mb-6"></div>
           <p className="text-xl text-white/80 max-w-3xl mx-auto">
-            ShakthiSAT Mission spans across 108 countries, empowering 12,000 girls globally
+            ShakthiSAT Mission spans across 108 countries including Australia, India, USA, UK, Canada, empowering 12,000 girls globally through space exploration and STEM education
           </p>
         </motion.div>
 

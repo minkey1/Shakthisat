@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <!-- Homepage - Highest Priority -->
   <url>
     <loc>https://shakthisat.com/</loc>
     <lastmod>2024-12-19</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shakthisat.com/" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://shakthisat.com/" />
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://shakthisat.com/" />
+    <xhtml:link rel="alternate" hreflang="en-US" href="https://shakthisat.com/" />
+    <xhtml:link rel="alternate" hreflang="en-GB" href="https://shakthisat.com/" />
+    <xhtml:link rel="alternate" hreflang="en-CA" href="https://shakthisat.com/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shakthisat.com/" />
     <image:image>
       <image:loc>https://shakthisat.com/img/shakthisat.png</image:loc>
-      <image:title>Mission ShakthiSat Logo</image:title>
-      <image:caption>Mission ShakthiSat - Empowering Girls in Space</image:caption>
+      <image:title>Mission ShakthiSat - Global Space Initiative</image:title>
+      <image:caption>Mission ShakthiSat empowering 12,000 girls from 108 countries through space exploration and satellite technology</image:caption>
     </image:image>
   </url>
   
@@ -20,48 +28,72 @@
   <url>
     <loc>https://shakthisat.com/about</loc>
     <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shakthisat.com/about" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://shakthisat.com/about" />
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://shakthisat.com/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shakthisat.com/about" />
   </url>
   
   <!-- Partners Page -->
   <url>
     <loc>https://shakthisat.com/partners</loc>
     <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shakthisat.com/partners" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://shakthisat.com/partners" />
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://shakthisat.com/partners" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shakthisat.com/partners" />
   </url>
   
   <!-- Advisors Page -->
   <url>
     <loc>https://shakthisat.com/advisors</loc>
     <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shakthisat.com/advisors" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://shakthisat.com/advisors" />
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://shakthisat.com/advisors" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shakthisat.com/advisors" />
   </url>
   
   <!-- Countries Page -->
   <url>
     <loc>https://shakthisat.com/countries</loc>
     <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shakthisat.com/countries" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://shakthisat.com/countries" />
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://shakthisat.com/countries" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shakthisat.com/countries" />
   </url>
   
   <!-- Patrons of Honor Page -->
   <url>
     <loc>https://shakthisat.com/patrons-of-honor</loc>
     <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shakthisat.com/patrons-of-honor" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://shakthisat.com/patrons-of-honor" />
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://shakthisat.com/patrons-of-honor" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shakthisat.com/patrons-of-honor" />
   </url>
   
   <!-- Devis/Ambassadors Page -->
   <url>
     <loc>https://shakthisat.com/devis</loc>
     <lastmod>2024-12-19</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://shakthisat.com/devis" />
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://shakthisat.com/devis" />
+    <xhtml:link rel="alternate" hreflang="en-IN" href="https://shakthisat.com/devis" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://shakthisat.com/devis" />
   </url>
   
 </urlset>
