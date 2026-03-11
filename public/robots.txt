@@ -1,0 +1,22 @@
+# Robots.txt for Mission ShakthiSat
+# https://shakthisat.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Priority pages for crawling
+Allow: /partners
+Allow: /advisors
+Allow: /about
+Allow: /countries
+Allow: /patrons-of-honor
+
+# Sitemap location
+Sitemap: https://shakthisat.com/sitemap.xml
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1
+
+# Block specific bots if needed (currently allowing all)
+# User-agent: BadBot
+# Disallow: /

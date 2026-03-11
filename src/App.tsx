@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import SEOHead from './components/seo/SEOHead';
 import Layout from './components/layout/Layout';
 import WelcomeAnimation from './components/ui/welcome-animation';
 import Home from './pages/Home';
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <Router>
+      <SEOHead />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />

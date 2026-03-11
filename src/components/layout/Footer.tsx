@@ -27,12 +27,13 @@ const Footer = () => {
                 <img 
                   src="https://raw.githubusercontent.com/financial1mastery1hub-sudo/Shakthisat/main/src/img/shakthisat.png" 
                   className="w-1/2"
-                  alt="ShakthiSat"
+                  alt="Mission ShakthiSat - Space Kidz India Logo"
+                  title="Mission ShakthiSat - Empowering 12,000 Girls from 108 Countries"
                 />
               </div>
             </div>
 
-            <p className="text-white/70 text-sm leading-relaxed mb-6">
+            <p className="text-white/70 text-sm leading-relaxed mb-6" itemProp="description">
               Empowering 12,000 girls from 108 countries through real-time satellite projects.
               Building bridges across cultures through STEM and space collaboration.
             </p>
@@ -106,7 +107,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-purple-500/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/60 text-sm">
+          <p className="text-white/60 text-sm" itemProp="copyrightNotice">
             © {currentYear} ShakthiSAT Mission. All rights reserved. Join the mission to inspire the next generation of space leaders
           </p>
 

@@ -13,7 +13,10 @@ const MissionOverview = () => {
   return (
     <>
       {isMounted && <ScrollGlobe sectionIds={['mission-hero', 'what-shakthisat', 'why-girls', 'why-108']} />}
-      <section className='min-h-screen py-20 px-4 md:px-8' id='mission-hero'>
+      <section className='min-h-screen py-20 px-4 md:px-8' id='mission-hero' itemScope itemType="https://schema.org/Project">
+        <meta itemProp="name" content="Mission ShakthiSat Overview" />
+        <meta itemProp="description" content="Global space mission empowering 12,000 girls from 108 countries through satellite technology and STEM education" />
+        
         <div className='max-w-7xl mx-auto'>
           <div className='grid lg:grid-cols-2 gap-12 items-center'>
             {/* Content Cards */}
@@ -32,10 +35,10 @@ const MissionOverview = () => {
                 viewport={{ once: true }}
                 className='bg-purple-900/40 rounded-2xl p-8 border border-purple-500/30'
               >
-                <h2 className='text-4xl md:text-5xl font-bold text-purple-300 mb-4'>
+                <h2 className='text-4xl md:text-5xl font-bold text-purple-300 mb-4' itemProp="headline">
                   MISSION OVERVIEW
                 </h2>
-                <p className='text-lg md:text-xl text-white/90'>
+                <p className='text-lg md:text-xl text-white/90' itemProp="about">
                   ShakthiSAT is a global mission to empower 12,000 girls from 108 countries through real-time satellite projects.
                 </p>
               </motion.div>
@@ -48,7 +51,7 @@ const MissionOverview = () => {
                 viewport={{ once: true }}
                 className='bg-purple-900/30 rounded-2xl p-8 border border-purple-500/20'
               >
-                <p className='text-base md:text-lg text-white/80 leading-relaxed mb-6'>
+                <p className='text-base md:text-lg text-white/80 leading-relaxed mb-6' itemProp="description">
                   The mission sets out on a bold journey to spark curiosity, courage, and a lifelong passion for STEM and space exploration in 12,000 brilliant young girls from 108 nations.
                 </p>
                 <p className='text-base md:text-lg text-white/80 leading-relaxed'>

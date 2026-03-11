@@ -4,10 +4,16 @@ import { motion } from "framer-motion";
 const AboutUs = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    
+    // SEO: Update page title for About page
+    document.title = "About Mission ShakthiSat | Dr. Srimathy Kesan | Space Kidz India | Space Research Organization";
   }, []);
 
   return (
-    <main className="relative min-h-screen bg-black text-white overflow-hidden">
+    <main className="relative min-h-screen bg-black text-white overflow-hidden" itemScope itemType="https://schema.org/AboutPage">
+      <meta itemProp="name" content="About Mission ShakthiSat" />
+      <meta itemProp="description" content="Learn about Dr. Srimathy Kesan, founder of Space Kidz India, and Mission ShakthiSat - empowering girls globally through space exploration" />
+      
       {/* Background Glows */}
       <div className="pointer-events-none absolute inset-0 opacity-40">
         <div className="absolute -top-40 -left-32 h-96 w-96 rounded-full bg-purple-700 blur-[120px]" />
@@ -23,10 +29,10 @@ const AboutUs = () => {
           </span>
 
           <div className="space-y-4">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-300 via-teal-200 to-purple-100 bg-clip-text text-transparent drop-shadow-lg">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-300 via-teal-200 to-purple-100 bg-clip-text text-transparent drop-shadow-lg" itemProp="headline">
               Space Kidz India & ShakthiSAT Mission
             </h1>
-            <p className="text-lg text-white/70 max-w-3xl mx-auto">
+            <p className="text-lg text-white/70 max-w-3xl mx-auto" itemProp="description">
               Inspiring young minds and empowering girls across the world
               through space science, innovation, and global unity.
             </p>
@@ -44,18 +50,27 @@ const AboutUs = () => {
         >
 
           {/* SECTION 1 — Founder */}
-          <section className="space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-bold text-teal-100">
+          <section className="space-y-4" itemScope itemType="https://schema.org/Person">
+            <h2 className="text-3xl sm:text-4xl font-bold text-teal-100" itemProp="name">
               Dr. Srimathy Kesan
             </h2>
+            <meta itemProp="jobTitle" content="Founder & CEO, Space Kidz India" />
+            <meta itemProp="worksFor" content="Space Kidz India" />
+            <meta itemProp="nationality" content="Indian" />
             
             <div className="flex flex-col sm:flex-row-reverse justify-center items-center sm:justify-start sm:items-start">
               
                 <div className="rounded-[1.4rem] bg-black/20 border border-white/10 p-2 mx-4 w-64 shrink-0">
-                  <img src="src/img/about-founder.jpg" className="aspect-[4/5] rounded-2xl border border-white/10 shadow-lg object-cover" alt="Founder of Space Kidz India" />
+                  <img 
+                    src="src/img/about-founder.jpg" 
+                    className="aspect-[4/5] rounded-2xl border border-white/10 shadow-lg object-cover" 
+                    alt="Dr. Srimathy Kesan - Founder of Space Kidz India and Mission ShakthiSat"
+                    itemProp="image"
+                    title="Dr. Srimathy Kesan - Leading Space Entrepreneur in India"
+                  />
                 </div>
               <div>
-              <p className="text-white/80 leading-relaxed text-lg">
+              <p className="text-white/80 leading-relaxed text-lg" itemProp="description">
                 Founder & CEO of Space Kidz India, is a pioneering aerospace entrepreneur with 7+ years of experience. She is the <span className="text-teal-300 font-semibold">only woman founder in the world to have built and launched 27 space missions</span>, including <span className="text-teal-300 font-semibold">19+ Balloon Satellites, 3 Suborbital Payloads, and 5 Orbital Satellites</span>. Her innovations include KALAMSAT (World's Smallest and Lightest Satellite), launched by NASA, and multiple satellites by ISRO including KalamsatV-2, SD SAT, AzaadiSAT, and AzaadiSAT 2.0.
               </p>
               
@@ -69,12 +84,13 @@ const AboutUs = () => {
           <div className="h-[1px] w-full bg-white/10" />
 
           {/* SECTION 2 — Mission */}
-          <section className="space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-bold text-purple-200">
+          <section className="space-y-4" itemScope itemType="https://schema.org/Project">
+            <h2 className="text-3xl sm:text-4xl font-bold text-purple-200" itemProp="name">
               Our Mission — ShakthiSAT
             </h2>
+            <meta itemProp="description" content="Global space initiative empowering 12,000 girls from 108 countries through space exploration and STEM education" />
 
-            <p className="text-white/80 leading-relaxed text-lg">
+            <p className="text-white/80 leading-relaxed text-lg" itemProp="about">
               ShakthiSAT is driven by the powerful vision of empowering young
               girls across the globe through the awe-inspiring world of space
               exploration. The mission aims to involve{" "}
@@ -88,10 +104,13 @@ const AboutUs = () => {
           <div className="h-[1px] w-full bg-white/10" />
           
           {/* SECTION 3 — Space Kidz India Intro */}
-          <section className="space-y-4">
-            <h2 className="text-3xl sm:text-4xl font-bold text-teal-100">
+          <section className="space-y-4" itemScope itemType="https://schema.org/Organization">
+            <h2 className="text-3xl sm:text-4xl font-bold text-teal-100" itemProp="name">
               Space Kidz India
             </h2>
+            <meta itemProp="foundingDate" content="2012" />
+            <meta itemProp="industry" content="Aerospace and Space Technology" />
+            <meta itemProp="location" content="Chennai, Tamil Nadu, India" />
             <p className="text-white/80 leading-relaxed text-lg">
               "Space Kidz India" is an aerospace startup designing and building
               satellites and rockets. It is the only organisation to have
