@@ -23,14 +23,12 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className='flex flex-grow justify-center sm:justify-start'>
-                <img 
-                  src="/ChatGPT_Image_Mar_12,_2026_at_06_56_45_PM.png" 
-                  className="w-1/2"
-                  alt="Mission ShakthiSAT - Global Space Initiative with Earth and Moon"
-                  title="Mission ShakthiSAT - Empowering 12,000 Girls from 108 Countries Globally"
-                />
-              </div>
+              <img 
+                src="/shakthisat.png" 
+                className="h-16 w-auto"
+                alt="Mission ShakthiSAT Logo"
+                title="Mission ShakthiSAT - Global Space Initiative"
+              />
             </div>
 
             <p className="text-white/70 text-sm leading-relaxed mb-6" itemProp="description">
