@@ -25,10 +25,10 @@ const Footer = () => {
             <div className="flex items-center space-x-2 mb-4">
               <div className='flex flex-grow justify-center sm:justify-start'>
                 <img 
-                  src="https://raw.githubusercontent.com/financial1mastery1hub-sudo/Shakthisat/main/src/img/shakthisat.png" 
+                  src="/ChatGPT_Image_Mar_12,_2026_at_06_56_45_PM.png" 
                   className="w-1/2"
-                  alt="Mission ShakthiSat - Space Kidz India Logo"
-                  title="Mission ShakthiSat - Empowering 12,000 Girls from 108 Countries"
+                  alt="Mission ShakthiSAT - Global Space Initiative with Earth and Moon"
+                  title="Mission ShakthiSAT - Empowering 12,000 Girls from 108 Countries Globally"
                 />
               </div>
             </div>

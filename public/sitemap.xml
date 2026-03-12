@@ -18,9 +18,14 @@
     <xhtml:link rel="alternate" hreflang="en-CA" href="https://shakthisat.com/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://shakthisat.com/" />
     <image:image>
+      <image:loc>https://shakthisat.com/ChatGPT_Image_Mar_12,_2026_at_06_56_45_PM.png</image:loc>
+      <image:title>Mission ShakthiSAT - Global Space Initiative with Earth and Moon</image:title>
+      <image:caption>Mission ShakthiSAT empowering 12,000 girls from 108 countries through space exploration, featuring Earth, Moon and starfield</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://shakthisat.com/img/shakthisat.png</image:loc>
-      <image:title>Mission ShakthiSat - Global Space Initiative</image:title>
-      <image:caption>Mission ShakthiSat empowering 12,000 girls from 108 countries through space exploration and satellite technology</image:caption>
+      <image:title>Mission ShakthiSAT Logo</image:title>
+      <image:caption>Official Mission ShakthiSAT logo representing global space initiative</image:caption>
     </image:image>
   </url>
   

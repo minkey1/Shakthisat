@@ -44,7 +44,7 @@ const Home = () => {
       
       <ScrollExpandMedia
         mediaType='video'
-        bgImageSrc="/img/shakthisat.png"
+        bgImageSrc="/ChatGPT_Image_Mar_12,_2026_at_06_56_45_PM.png"
         mediaSrc="https://raw.githubusercontent.com/financial1mastery1hub-sudo/Shakthisat/main/src/img/video.mp4"
         date='Global Space Initiative'
         scrollToExpand='Scroll to Expand & Explore'

@@ -30,7 +30,7 @@ const AboutUs = () => {
 
           <div className="space-y-4">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-purple-300 via-teal-200 to-purple-100 bg-clip-text text-transparent drop-shadow-lg" itemProp="headline">
-              Space Kidz India & ShakthiSAT Mission
+              Space Kidz India & Mission ShakthiSAT
             </h1>
             <p className="text-lg text-white/70 max-w-3xl mx-auto" itemProp="description">
               Inspiring young minds and empowering girls across the world
