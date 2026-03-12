@@ -51,7 +51,7 @@ const WelcomeAnimation = ({ onComplete }: WelcomeAnimationProps) => {
             className="mb-10"
           >
             <motion.img
-              src="/ChatGPT_Image_Mar_12,_2026_at_06_56_45_PM.png"
+              src="https://raw.githubusercontent.com/financial1mastery1hub-sudo/Shakthisat/main/src/img/shakthisat.png"
               className="w-56 md:w-72 object-contain"
               animate={{
                 filter: [
@@ -84,7 +84,7 @@ const WelcomeAnimation = ({ onComplete }: WelcomeAnimationProps) => {
                 transition={{ duration: 1 }}
               />
 
-              <p className="text-sm md:text-xl text-gray-400 mt-4" itemProp="description">
+              <p className="text-sm md:text-xl text-gray-400 mt-4">
                 12,000 Girls • 108 Countries • ∞ Possibilities
               </p>
             </motion.div>

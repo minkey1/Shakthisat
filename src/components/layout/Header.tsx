@@ -27,10 +27,10 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img 
-              src="/shakthisat.png" 
-              className="h-12 w-auto" 
-              alt="Mission ShakthiSAT Logo" 
-              title="Mission ShakthiSAT - Global Space Initiative"
+              src="https://raw.githubusercontent.com/financial1mastery1hub-sudo/Shakthisat/main/src/img/shakthisat1.png" 
+              className="w-1/2" 
+              alt="Mission ShakthiSat - Global Space Initiative Empowering Girls" 
+              title="Mission ShakthiSat - Space Tech India"
             />
           </Link>
 
