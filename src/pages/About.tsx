@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import founderImg from "../img/about-founder.jpg";
 
 const AboutUs = () => {
   useEffect(() => {
@@ -62,7 +63,7 @@ const AboutUs = () => {
               
                 <div className="rounded-[1.4rem] bg-black/20 border border-white/10 p-2 mx-4 w-64 shrink-0">
                   <img 
-                    src="src/img/about-founder.jpg" 
+                    src={founderImg} 
                     className="aspect-[4/5] rounded-2xl border border-white/10 shadow-lg object-cover" 
                     alt="Dr. Srimathy Kesan - Founder of Space Kidz India and Mission ShakthiSat"
                     itemProp="image"
