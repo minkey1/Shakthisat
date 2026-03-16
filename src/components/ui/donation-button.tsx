@@ -1,27 +1,17 @@
-import { useEffect, useRef } from "react";
+import { Button } from "@/components/ui/button";
 
-const RazorpayButton: React.FC = () => {
-  const containerRef = useRef<HTMLFormElement | null>(null);
-
-  useEffect(() => {
-    const container = containerRef.current;
-    if (!container) return;
-
-    // 👇 prevents double injection in React 18 StrictMode
-    if (container.querySelector("script")) return;
-
-    const script = document.createElement("script");
-    script.src = "https://checkout.razorpay.com/v1/payment-button.js";
-    script.async = true;
-    script.setAttribute(
-      "data-payment_button_id",
-      "pl_SJefeUpLJXleZo"
-    );
-
-    container.appendChild(script);
-  }, []);
-
-  return <form ref={containerRef}></form>;
+const DonationButton: React.FC = () => {
+  return (
+    <Button
+        type="button"
+        className="bg-gradient-to-r from-primary to-secondary text-white shadow-xl shadow-primary/40 hover:shadow-primary/50 hover:from-primary/90 hover:to-secondary/90"
+        onClick={() => {
+          window.location.href = "https://shakthisat-global.vercel.app";
+        }}
+      >
+        Donate Now
+      </Button>
+  );
 };
 
-export default RazorpayButton;
+export default DonationButton;
